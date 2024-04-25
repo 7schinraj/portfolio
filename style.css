@@ -586,8 +586,10 @@ nav a{
         order: 1;
     }
     .head{
-        /* text-align: center; */
-        font-size: 35px;
+        font-size: 25px;
+    }
+    .full-stack{
+        font-size: 23px;
     }
     .border{
         width: 90%;
@@ -595,11 +597,6 @@ nav a{
     .cr7{
         width: 80%;
     }
-    /* .icons{
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-    } */
     .whole-about{
         flex-direction: column;
         gap: 100px;
