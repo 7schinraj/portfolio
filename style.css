@@ -4,6 +4,8 @@
 }
 body{
     font-family: "Lato", sans-serif;
+    height: 100%;
+    width: 100%;
 }
 nav{
     width:80%;
@@ -151,7 +153,7 @@ nav a{
     font-size: 20px;
 }
 .skils-div{
-    width: 60%;
+    width: 70%;
 }
 .skils-div button{
     background: none;
@@ -176,6 +178,8 @@ nav a{
 }
 .whole-do{
     margin-bottom: 80px;
+    height: 100%;
+    width: 100%;
 }
 .what-i-do{
     width: 80%;
@@ -292,6 +296,10 @@ nav a{
     gap: 50px;
     margin: 30px auto;
 }
+.skill-section{
+    width: 100%;
+    height: 100%;
+}
 .skill-1{
     display: flex;
     justify-content: center;
@@ -395,7 +403,6 @@ nav a{
     justify-content: center;
     gap: 15px;
     border-radius: 5px;
-    
 }
 .collection:hover{
     border: 2px solid #40e609;
@@ -444,4 +451,232 @@ nav a{
 }
 .f-icons i{
     font-size: 20px;
+}
+.menu-ic{
+    text-decoration: none;
+    color: #000000;
+    font-size: 22px;
+    display: none;
+}
+@media(max-width: 1200px){
+    nav{
+        width: 90%;
+    }
+    .nav-menu{
+        width: 70%;
+    }
+    .head{
+        font-size: 34px;
+    }
+    .nav-menu a{
+        font-weight: 900;
+    }
+    .whole-home{
+        width: 90%;
+        height: 45vh;
+        background: none;
+    }
+    .home-contents-right{
+        width: 45%;
+    }
+    .whole-about{
+        gap: 50px;
+    }
+    .about-side{
+        width: 50%;
+        gap: 15px;
+    }
+    .img{
+        width: 35%;
+    }
+    .whole-about{
+        width: 90%;
+    }
+    .img img{
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        border-top-left-radius: 60%;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .skils-div{
+        width: 100%;
+    }
+    .dwld-cv{
+        width: 200px;
+        height: 55px;
+        font-size: 18px;
+    }
+    .what-i-do{
+        width: 90%;
+    }
+    .collections{
+        height: 250px;
+        width: 30%;
+        align-items: center;
+        padding: 15px;
+    }
+    .collections h2{
+        text-align: center;
+    }
+    .collections p{
+        text-align: center;
+    }
+    .whole-skills{
+        width: 90%;
+        justify-content: space-around;
+    }
+    .skill-parent{
+        width: 80%;
+    }
+    .education-parent{
+        width: 90%;
+    }
+    .grid{
+        width: 90%;
+    }
+    .contact-parent{
+        width: 90%;
+        height: 260px;
+    }
+    .collection{
+        width: 30%;
+    }
+    .location{
+        width: 87%;
+    }
+    .footer{
+        width: 80%;
+    }
+    .footer p{
+        font-size: 20px;
+    }
+    .f-icons{
+        width: 15%;
+    }
+    .f-icons i{
+        font-size: 25px;
+    }
+}
+@media(max-width: 600px){
+    nav{
+        width: 85%;
+    }
+    .menu-ic{
+        display: block;
+        font-weight: 900;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .whole-home{
+        width: 85%;
+        flex-direction: column;
+        height: 100%;
+        gap: 30px;
+    }
+    .home-contents-left{
+        width: 80%;
+        /* align-items: center; */
+        order: 2;
+    }
+    .home-contents-right{
+        width: 100%;
+        order: 1;
+    }
+    .head{
+        /* text-align: center; */
+        font-size: 35px;
+    }
+    .border{
+        width: 90%;
+    }
+    .cr7{
+        width: 80%;
+    }
+    /* .icons{
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    } */
+    .whole-about{
+        flex-direction: column;
+        gap: 100px;
+        margin-bottom: 50px;
+    }
+    .img {
+        width: 100%;
+        height: 270px;
+    }
+    .img img{
+       border-top-left-radius: 55%;
+       border-bottom-left-radius: 20px;
+       border-bottom-right-radius: 20px;
+    }
+    .about-side{
+        width: 90%;
+    }
+    .what-i-do{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .collections{
+        width: 80%;
+    }
+    .whole-skills{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .tech-skills{
+        width: 100%;
+    }
+    .prof-skills{
+        width: 100%;
+    }
+    .whole-do{
+        margin-bottom: 30px;
+    }
+    .head-sec{
+        width: 90%;
+    }
+    .grid{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .col-1{
+        width: 90%;
+        border-radius: 10px;
+        /* padding: 10px; */
+    }
+    .contact-parent{
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+    }
+    .sec-contact{
+        margin: 20px 0;
+    }
+    .collection{
+        width: 90%;
+        height: 300px;
+    }
+    .location{
+        width: 80%;
+        height: 200px;
+    }
+    .footer{
+        width: 70%;
+    }
+    .footer p{
+        font-size: 14px;
+    }
+    .f-icons{
+        width: 20%;
+        justify-content: space-between;
+    }
+    .f-icons i{
+        font-size: 15px;
+    }
 }
