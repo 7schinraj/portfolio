@@ -21,13 +21,6 @@ nav img{
 nav a{
     text-decoration: none;
 }
-.logo{
-    color: white;
-    padding: 15px 30px;
-    font-weight: 700;
-    background-color: #528C3F;
-    border-radius: 10px;
-}
 .nav-menu{
     width: 50%;
     display: flex;
@@ -45,12 +38,13 @@ nav a{
 .whole-home{
     width: 80%;
     height: 80vh;
-    background: linear-gradient(to left, #528C3F, #ffffff);
+    background: linear-gradient(to left, #485479, #ffffff);
     margin: 10px auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-top-right-radius: 40px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 10px;
     border-bottom-left-radius: 40px;
 
 }
@@ -79,7 +73,9 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: end;
+    background: linear-gradient(to left, #485479, #ffffff);
 }
+
 .cr7{
     width: 90%;
     height: 90%;
@@ -108,8 +104,8 @@ nav a{
 }
 .icons a{
     color: white;
-    background-color: #528C3F;
-    border: 1px solid #528C3F;
+    background-color: #485479;
+    border: 1px solid #485479;
     padding: 8px 10px;
     text-decoration: none;
     font-size: 20px;
@@ -157,7 +153,7 @@ nav a{
 }
 .skils-div button{
     background: none;
-    border: 1px solid #528C3F;
+    border: 1px solid #485479;
     padding: 5px 15px;
     border-radius: 5px;
     font-size: 14px;
@@ -168,7 +164,7 @@ nav a{
     width: 170px;
     height: 45px;
     font-size: 16px;
-    background-color: #528C3F;
+    background-color: #485479;
     color: white;
     border: none;
     border-radius: 10px;
@@ -192,17 +188,17 @@ nav a{
 .collections{
     width: 25%;
     height: 200px;
-    border: 2px solid gray;
+    border: 2px solid #485479;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;    
     border-radius: 10px;
-    /* box-shadow: 5px 5px 5px 5px rgb(111, 110, 110); */
 }
 .collections:hover{
-    border: 2px solid #40e609;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px 0px #485479;
 }
 .collections i{
     color: #A955F6;
@@ -256,26 +252,26 @@ nav a{
     width: 90%;
     height: 100%;
     border-radius: 5px;
-   background-color: #40e609;
+   background-color: #485479;
 }
 .skill-shade2{
     width: 70%;
     height: 100%;
     border-radius: 5px;
-   background-color: #40e609;
+   background-color: #485479;
 }
 .skill-shade3{
     width: 85%;
     height: 100%;
     border-radius: 5px;
-   background-color: #40e609;
+   background-color: #485479;
 
 }
 .skill-shade4{
     width: 90%;
     height: 100%;
     border-radius: 5px;
-   background-color: #40e609;
+   background-color: #485479;
 
 }
 .skill p{
@@ -307,7 +303,7 @@ nav a{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 12px solid #40e609;
+    border: 12px solid #485479;
 }
 .skill-1 p{
     font-size: 20px;
@@ -479,6 +475,9 @@ nav a{
     .home-contents-right{
         width: 45%;
     }
+    .border{
+        background: linear-gradient(to left, #485479, #ffffff);
+    }
     .whole-about{
         gap: 50px;
     }
@@ -558,10 +557,16 @@ nav a{
     .f-icons i{
         font-size: 25px;
     }
+    .skils-div button{
+        border: 2px solid #485479;
+    }
 }
 @media(max-width: 600px){
     nav{
         width: 85%;
+    }
+    .skils-div button{
+        border: 2px solid #485479;
     }
     .menu-ic{
         display: block;
@@ -576,14 +581,38 @@ nav a{
         height: 100%;
         gap: 30px;
     }
+    
     .home-contents-left{
         width: 80%;
         /* align-items: center; */
         order: 2;
+        animation: order-2;
+        animation-duration: 1.5s;
+    }
+    @keyframes order-2 {
+        from{
+            transform: translateX(200px);
+        }
+        to{
+            transform: translateX(0);
+        }
     }
     .home-contents-right{
         width: 100%;
         order: 1;
+        animation: order-1;
+        animation-duration: 1.5s;
+    }
+    @keyframes order-1 {
+        from{
+            transform: translateX(-200px);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    .border{
+        background: linear-gradient(to left, #485479, #ffffff);
     }
     .head{
         font-size: 25px;
