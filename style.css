@@ -679,6 +679,7 @@ nav a{
         flex-direction: column;
         height: 100%;
         width: 90%;
+        gap: 35px;
     }
     .sec-contact{
         margin: 20px 0;
@@ -690,6 +691,7 @@ nav a{
     .location{
         width: 100%;
         height: 200px;
+        margin-top: 30px;
     }
     .footer{
         width: 85%;
