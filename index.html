@@ -24,8 +24,22 @@
             <a href="">Portfolio</a>
             <a href="#contact">Contact</a>
         </div>
-        <a class="menu-ic" href=""><i class="ri-menu-fill"></i></a>
+        <p onclick="homeMenu()" class="menu-ic" href=""><i class="ri-menu-fill"></i></p>
     </nav>
+
+        <div id="nav-contents" class="nav-mobile animate__animated animate__slideInRight">
+            <div class="close">
+                <i onclick="closeMenu()" class="ri-close-fill"></i>
+            </div>
+            <div class="sub-div">
+                <a href="#home"><h3>Home</h3></a>
+                <a href="#about"><h3>About</h3></a>
+                <a href="#skills"><h3>Skills</h3></a>
+                <a href="#experience"><h3>Experiences</h3></a>
+                <a href="#portfolio"><h3>Portfolio</h3></a>
+                <a href="#contact"><h3>Contact</h3></a>
+            </div>
+        </div>
     <section class="whole-home">
         <!--Home left  -->
         <div class="home-contents-left">
@@ -65,7 +79,10 @@
                 <button>Data Base</button>
                 <button>Git</button>
            </div>
-           <button class="dwld-cv">Download-CV <i class="fa-solid fa-download"></i></button>
+           <button onclick="downloadResume()" class="dwld-cv">Download-CV <i class="fa-solid fa-download"></i></button>
+           <div id="loadingOverlay" class="loading-overlay">
+            <div class="loading-message">Downloading Resume... Please wait...</div>
+        </div>
         </div>
     </section>
 
@@ -266,5 +283,6 @@
             <i class="ri-facebook-circle-line"></i>
         </div>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
