@@ -508,12 +508,18 @@ nav a{
     align-items: center;
     z-index: 9999;
     display: none;
+    width: 100%;
 }
 .loading-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-message p{
     color: #fff;
     font-size: 24px;
 }
-
 @media(max-width: 1200px){
     nav{
         width: 90%;
@@ -766,5 +772,8 @@ nav a{
     }
     .f-icons i{
         font-size: 15px;
+    }
+    .loading-message p{
+        font-size: 18px;
     }
 }
