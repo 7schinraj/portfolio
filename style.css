@@ -48,6 +48,31 @@ nav a{
     border-bottom-left-radius: 40px;
 
 }
+.arrow-div{
+    width: 95%;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    margin: 0 auto;
+    position: relative;
+}
+.arrow-div a{
+    text-decoration: none;
+    height:50px;
+    width: 50px;
+    background-color: rgb(72,84,121);
+    border-radius: 10px;
+    position: fixed;
+    bottom: 5%;
+}
+.arrow-div i{
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    bottom: 6.3%;
+    right: 3.2%;
+    z-index: 4;
+}
 .home-contents-right{
     width: 30%;
     height: 100%;
@@ -468,7 +493,7 @@ nav a{
     right: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     display: none;
     transition: 0.8s all;
@@ -495,6 +520,7 @@ nav a{
 .close i{
     font-size: 22px;
     font-weight: 900;
+    cursor: pointer;
 }
 .loading-overlay {
     position: fixed;
@@ -522,6 +548,10 @@ nav a{
 }
 
 @media(max-width: 1200px){
+    .arrow-div i{
+        right: 3.5%;
+        bottom: 5.7%;
+    }
     nav{
         width: 90%;
     }
@@ -629,6 +659,10 @@ nav a{
     }
 }
 @media(max-width: 600px){
+    .arrow-div i{
+        right:4.5%;
+        bottom: 6.2%;
+    }
     nav{
         width: 85%;
     }
