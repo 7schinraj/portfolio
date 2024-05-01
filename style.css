@@ -56,7 +56,6 @@ nav a{
 }
 .arrow-div{
     width: 95%;
-    height: 100px;
     display: flex;
     justify-content: end;
     margin: 0 auto;
@@ -253,7 +252,6 @@ nav a{
 .collections:hover{
     border: 2px solid white;
     box-shadow: 0px 0px 10px 0px #485479;
-    
 }
 .collections i{
     color: #A955F6;
@@ -592,7 +590,7 @@ nav a{
     }
     .whole-home{
         width: 90%;
-        height: 45vh;
+        height: 35vh;
         background: none;
     }
     .home-contents-right{
@@ -603,6 +601,7 @@ nav a{
     }
     .whole-about{
         gap: 50px;
+        margin-top: 20px;
     }
     .about-side{
         width: 50%;
@@ -756,7 +755,8 @@ nav a{
     .whole-about{
         flex-direction: column;
         gap: 100px;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
+        margin: 60px 0;
     }
     .img {
         width: 100%;
