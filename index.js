@@ -7,6 +7,16 @@ function closeMenu() {
     blockMenu.style.display = 'none';
 }
 
+// Home Menu Animated 
+var typed = new Typed(".multiple-text", {
+    strings: ["Chinraj CR", "Web Developer"],
+    typeSpeed: 125,
+    backSpeed: 150,
+    backDelay: 1000,
+    loop: true
+})
+
+
 // #Resume Download Functionality
 function downloadResume() {
     const loadingOverlay = document.getElementById('loadingOverlay');
