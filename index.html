@@ -14,32 +14,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <nav class="animate__animated animate__fadeInDown">
+    <nav id="home" class="animate__animated animate__fadeInDown">
         <img src="./images/portfoliologo.png" alt="">
         <div class="nav-menu">
-            <a href="">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experiences</a>
+            <a href="#home" onclick="smoothScroll(event)">Home</a>
+            <a href="#about" onclick="smoothScroll(event)">About</a>
+            <a href="#skills" onclick="smoothScroll(event)">Skills</a>
+            <a href="#experience" onclick="smoothScroll(event)">Experiences</a>
             <a href="">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onclick="smoothScroll(event)">Contact</a>
         </div>
         <p onclick="homeMenu()" class="menu-ic" href=""><i class="ri-menu-fill"></i></p>
     </nav>
 
-        <div id="nav-contents" class="nav-mobile animate__animated animate__slideInRight">
-            <div class="close">
-                <i onclick="closeMenu()" class="ri-close-fill"></i>
-            </div>
-            <div class="sub-div">
-                <a href="#home"><h3>Home</h3></a>
-                <a href="#about"><h3>About</h3></a>
-                <a href="#skills"><h3>Skills</h3></a>
-                <a href="#experience"><h3>Experiences</h3></a>
-                <a href="#portfolio"><h3>Portfolio</h3></a>
-                <a href="#contact"><h3>Contact</h3></a>
-            </div>
+    <!-- mobile view navbar  -->
+    <div id="nav-contents" class="nav-mobile animate__animated animate__slideInRight">
+        <div class="close">
+            <i onclick="closeMenu()" class="ri-close-fill"></i>
         </div>
+        <div class="sub-div">
+            <a href="#home" onclick="smoothScroll(event)">Home</a>
+            <div style="width: 100%; height: 1px; background-color: white;"></div>
+            <a href ="#about" onclick="smoothScroll(event)">About</a>
+            <div style="width: 100%; height: 1px; background-color: white;"></div>
+            <a href="#skills" onclick="smoothScroll(event)">Skills</a>
+            <div style="width: 100%; height: 1px; background-color: white;"></div>
+            <a href="#experience" onclick="smoothScroll(event)">Experiences</a>
+            <div style="width: 100%; height: 1px; background-color: white;"></div>
+            <a href="#portfolio" onclick="smoothScroll(event)">Portfolio</a>
+            <div style="width: 100%; height: 1px; background-color: white;"></div>
+            <a href="#contact" onclick="smoothScroll(event)">Contact</a>
+        </div>
+    </div>
+
     <section class="whole-home">
         <!--Home left  -->
         <div class="home-contents-left">
