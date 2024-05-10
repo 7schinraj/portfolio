@@ -7,7 +7,6 @@ function closeMenu() {
     blockMenu.style.display = 'none';
 }
 
-// Home Menu Animated 
 var typed = new Typed(".multiple-text", {
     strings: ["Chinraj CR", "Web Developer"],
     typeSpeed: 125,
@@ -16,16 +15,12 @@ var typed = new Typed(".multiple-text", {
     loop: true
 })
 
-
-// #Resume Download Functionality
 function downloadResume() {
     const loadingOverlay = document.getElementById('loadingOverlay');
     loadingOverlay.style.display = 'flex';
-
-    // Delay the download for 3 seconds
     setTimeout(function() {
         console.log('Downloading resume');
-        const resumeUrl = './resume/Resume.pdf';
+        const resumeUrl = './resume/chinraj.resume.pdf';
         const downloadLink = document.createElement("a");
         downloadLink.href = resumeUrl;
         downloadLink.download = 'your_resume.pdf';
@@ -35,31 +30,16 @@ function downloadResume() {
         loadingOverlay.style.display = 'none';
     }, 3000);
 }
-// smoth scroll functionality 
-// function smoothScroll(event) {
-//     event.preventDefault();
-//     const targetId = event.target.getAttribute("href").substring(1);
-//     const targetElement = document.getElementById(targetId);
-//     const offsetTop = targetElement.offsetTop;
-//     const scrollOptions = {
-//         top: offsetTop,
-//         behavior: 'smooth'
-//     };
-//     window.scrollTo(scrollOptions);
-// }
+
 function smoothScroll(event) {
     event.preventDefault();
     const targetId = event.target.getAttribute("href").substring(1);
     const targetElement = document.getElementById(targetId);
     const offsetTop = targetElement.offsetTop;
-    
-    // Get current scroll position
     const start = window.pageYOffset;
     const distance = offsetTop - start;
-    const duration = 1000; // 1 second
-    
+    const duration = 1000;
     let startTime = null;
-
     function animation(currentTime) {
         if (startTime === null) startTime = currentTime;
         const timeElapsed = currentTime - startTime;
@@ -67,14 +47,11 @@ function smoothScroll(event) {
         window.scrollTo(0, run);
         if (timeElapsed < duration) requestAnimationFrame(animation);
     }
-
-    // Easing function
     function ease(t, b, c, d) {
         t /= d / 2;
         if (t < 1) return c / 2 * t * t + b;
         t--;
         return -c / 2 * (t * (t - 2) - 1) + b;
     };
-
     requestAnimationFrame(animation);
 }
