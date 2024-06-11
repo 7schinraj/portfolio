@@ -14,23 +14,20 @@ var typed = new Typed(".multiple-text", {
     backDelay: 1000,
     loop: true
 })
-
 function downloadResume() {
     const loadingOverlay = document.getElementById('loadingOverlay');
     loadingOverlay.style.display = 'flex';
     setTimeout(function() {
-        console.log('Downloading resume');
-        const resumeUrl = './resume/chinraj.resume.pdf';
+        const resumeUrl = './Assets/new_resume.pdf';
         const downloadLink = document.createElement("a");
         downloadLink.href = resumeUrl;
-        downloadLink.download = 'your_resume.pdf';
+        downloadLink.download = 'Resume.pdf';
         document.body.appendChild(downloadLink);
         downloadLink.click();
         document.body.removeChild(downloadLink);
         loadingOverlay.style.display = 'none';
     }, 3000);
 }
-
 function smoothScroll(event) {
     event.preventDefault();
     const targetId = event.target.getAttribute("href").substring(1);
